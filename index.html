@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Екатерина Ляшенко — бизнес-ассистент, ассистент руководителя. Организация процессов, AI-инструменты, онлайн-проекты.">
+<title>Екатерина Ляшенко — Бизнес-ассистент</title>
+<style>
+:root{--bg:#101316;--panel:#171c20;--cream:#f2eee6;--muted:#b2b4b1;--gold:#c6a875;--line:rgba(242,238,230,.13);--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,19,22,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;font-size:21px;letter-spacing:.03em}.brand span{color:var(--gold)}
+nav{display:flex;gap:28px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}nav a:hover{color:var(--gold)}
+.hero{padding:86px 0 92px;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;min-height:620px}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+h1{font:clamp(48px,7vw,82px)/.98 Georgia,serif;font-weight:400;letter-spacing:-.04em;margin:0 0 24px}
+h1 em{color:var(--gold);font-style:normal}.lead{font-size:17px;line-height:1.75;color:#c8c9c5;max-width:590px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{padding:14px 22px;border:1px solid var(--gold);font-size:11px;letter-spacing:.13em;text-transform:uppercase;transition:.2s}.btn.primary{background:var(--gold);color:#17191a}.btn:hover{transform:translateY(-2px);background:var(--cream);color:#111;border-color:var(--cream)}
+.portrait{position:relative;max-width:440px;margin-left:auto}.portrait:before{content:"";position:absolute;inset:22px -18px -18px 22px;border:1px solid var(--gold);opacity:.65}.portrait img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;filter:saturate(.78);background:#252a2d}
+.hero-note{position:absolute;bottom:24px;left:-48px;background:var(--panel);padding:16px 20px;border:1px solid var(--line);font:italic 17px Georgia,serif;color:var(--gold)}
+section{padding:86px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:25px;margin-bottom:40px}
+.kicker{color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px}
+h2{font:clamp(34px,4vw,52px)/1.08 Georgia,serif;font-weight:400;margin:0}.section-intro{max-width:390px;color:var(--muted);font-size:14px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px}.about-copy{font:22px/1.55 Georgia,serif;color:#e9e3d8}.about-copy strong{color:var(--gold);font-weight:400}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fact{padding:22px;background:var(--panel);border:1px solid var(--line)}.fact b{display:block;font:32px Georgia,serif;color:var(--gold);margin-bottom:8px}.fact span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:27px 24px;background:var(--panel);border:1px solid var(--line);min-height:205px}.num{color:var(--gold);font:italic 18px Georgia,serif}.card h3{font:22px Georgia,serif;font-weight:400;margin:18px 0 10px}.card p{font-size:13px;color:var(--muted);margin:0}
+.tools{display:flex;flex-wrap:wrap;gap:10px}.tool{border:1px solid var(--line);padding:12px 16px;font-size:12px;color:#d7d6d0;background:rgba(255,255,255,.02)}
+.video-box{background:var(--panel);border:1px solid var(--line);padding:18px}.video-placeholder{aspect-ratio:16/9;background:linear-gradient(135deg,#22292c,#14191c);display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px}.play{width:56px;height:56px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:20px;margin:0 auto 16px}.video-placeholder p{max-width:440px;font-size:13px}.video-caption{font:italic 18px Georgia,serif;color:var(--gold);padding:18px 4px 4px}
+.contact{background:#171c20;padding:65px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.contact h2{max-width:500px}.contact-list{display:grid;gap:15px}.contact-list a{border-bottom:1px solid var(--line);padding:0 0 12px;color:#e9e3d8}.contact-list small{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}
+footer{padding:28px 0;color:#777f80;font-size:11px;display:flex;justify-content:space-between}
+@media(max-width:800px){nav{gap:12px;font-size:9px}.hero{grid-template-columns:1fr;gap:45px;padding:60px 0}.portrait{width:min(82%,400px);margin:0 auto}.hero-note{left:-20px}.about-grid,.contact{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-intro{margin-top:18px}.contact{padding:35px 25px}}
+@media(max-width:520px){.wrap{width:min(100% - 32px,1160px)}.nav{height:auto;min-height:68px;align-items:flex-start;padding:18px 0;gap:10px;flex-direction:column}nav{flex-wrap:wrap}.cards{grid-template-columns:1fr}section{padding:62px 0}.hero{min-height:unset}.lead{font-size:15px}.facts{gap:8px}.fact{padding:16px}.contact{padding:28px 18px}footer{gap:12px;flex-direction:column}}
+
+/* Светлая редакция: молочный фон, графитовый текст и спокойный шалфейный акцент */
+:root{--bg:#f7f6f2;--panel:#ffffff;--cream:#292d2b;--muted:#747b75;--gold:#718879;--line:rgba(45,57,49,.13);--white:#ffffff}
+body{background:var(--bg);color:#292d2b}
+header{background:rgba(250,249,246,.92);border-bottom:1px solid var(--line)}
+nav{color:#6f7771}nav a:hover{color:#526b5b}
+.eyebrow,.kicker{color:#718879}
+h1 em{color:#718879}
+.lead{color:#606a63}
+.btn{border-color:#718879;color:#35463b}
+.btn.primary{background:#718879;color:#fff}
+.btn:hover{background:#526b5b;color:#fff;border-color:#526b5b}
+.portrait:before{border-color:#8da092}
+.portrait img{filter:none;background:#e8ebe6}
+.hero-note{background:#fff;color:#526b5b;border-color:rgba(45,57,49,.13);box-shadow:0 12px 32px rgba(35,45,38,.08)}
+.about-copy{color:#424b45}
+.about-copy strong{color:#607b68}
+.fact,.card,.video-box{background:#fff;border-color:rgba(45,57,49,.12);box-shadow:0 8px 26px rgba(35,45,38,.035)}
+.fact b,.num{color:#718879}
+.card p,.fact span,.section-intro{color:#707971}
+.tool{color:#4d5951;background:#fff;border-color:rgba(45,57,49,.14)}
+.video-placeholder{background:linear-gradient(135deg,#edf0eb,#e3e9e2);color:#667168}
+.play{border-color:#718879;color:#607b68}
+.video-caption{color:#607b68}
+.contact{background:#e9eee8;color:#29352d}
+.contact-list a{color:#36443a;border-color:rgba(45,57,49,.16)}
+.contact-list small{color:#607b68}
+footer{color:#7c857d}
+@media(prefers-reduced-motion:no-preference){.card,.fact,.tool{transition:transform .2s ease,box-shadow .2s ease}.card:hover,.fact:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(35,45,38,.08)}}
+
+.work-areas{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;row-gap:0;border-top:1px solid var(--line)}
+.work-area{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:28px 0 30px;border-bottom:1px solid var(--line)}
+.work-index{font-family:Georgia,serif;font-size:15px;color:var(--sage,var(--accent,#849487));padding-top:4px}
+.work-area h3{font-size:18px;font-weight:500;margin:0 0 9px;color:var(--ink,#303a34)}
+.work-area p{font-size:14px;line-height:1.8;color:var(--muted,#69736d);margin:0;max-width:490px}
+@media(max-width:800px){.work-areas{grid-template-columns:1fr;column-gap:0}.work-area{padding:23px 0}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">Екатерина <span>Ляшенко</span></a><nav><a href="#about">Обо мне</a><a href="#services">Компетенции</a><a href="#tools">Инструменты</a><a href="#video">Видео</a><a href="#contact">Контакты</a></nav></div></header>
+<main>
+<div class="wrap hero">
+ <div><div class="eyebrow">Business assistant · Executive support</div><h1>Порядок в задачах.<br><em>Свобода</em> для роста.</h1>
+ <p class="lead">Помогаю руководителям организовывать процессы, координировать команды и превращать большой поток задач в понятную систему. Использую AI и цифровые инструменты, чтобы работать быстрее и эффективнее.</p>
+ <div class="actions"><a class="btn primary" href="#contact">Связаться со мной</a><a class="btn" href="assets/resume-ekaterina-lyashenko.pdf" target="_blank">Открыть резюме</a></div></div>
+ <div class="portrait"><img src="assets/ekaterina-photo.jpg" alt="Екатерина Ляшенко"><div class="hero-note">Внимание к деталям<br>и системный подход</div></div>
+</div>
+<section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / Знакомство</div><h2>Обо мне</h2></div><p class="section-intro">Надёжная организационная поддержка, ясная коммуникация и интерес к современным технологиям.</p></div>
+<div class="about-grid"><div class="about-copy">Я — <strong>бизнес-ассистент</strong> с опытом работы в онлайн-проектах с 2022 года. Умею держать в фокусе детали, видеть общую картину и поддерживать рабочий ритм команды. Мне близки задачи, где важны ответственность, самостоятельность и умение быстро разобраться в новом.</div><div class="facts"><div class="fact"><b>2022</b><span>Начало работы в онлайн-проектах</span></div><div class="fact"><b>AI</b><span>Практическое применение ИИ в работе</span></div><div class="fact"><b>Team</b><span>Координация и поддержка команды</span></div><div class="fact"><b>Learn</b><span>Опыт обучения детей и взрослых</span></div></div></div></div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / Чем полезна</div><h2>Мои компетенции</h2></div><p class="section-intro">Закрываю организационные и операционные задачи, чтобы руководитель мог сосредоточиться на главном.</p></div>
+<div class="cards">
+<div class="card"><div class="num">01</div><h3>Поддержка руководителя</h3><p>Организация задач, административная помощь, подготовка материалов, взаимодействие с командой и подрядчиками.</p></div>
+<div class="card"><div class="num">02</div><h3>Онлайн-проекты</h3><p>Сопровождение процессов онлайн-школ, модерация вебинаров, поддержка пользователей и работа с учебными платформами.</p></div>
+<div class="card"><div class="num">03</div><h3>AI и аналитика</h3><p>Поиск и анализ информации с помощью AI-инструментов, работа с Google Таблицами, подготовка отчётности и оптимизация рутины.</p></div>
+<div class="card"><div class="num">04</div><h3>Команда и коммуникации</h3><p>Участие в подборе и адаптации сотрудников, контроль задач, понятная коммуникация и обучение.</p></div>
+<div class="card"><div class="num">05</div><h3>Маркетинговые задачи</h3><p>Telegram-размещения и рассылки, брифы подрядчикам, лендинги, презентации и материалы.</p></div>
+<div class="card"><div class="num">06</div><h3>Техническая поддержка</h3><p>Помощь пользователям, администрирование онлайн-обучения, настройка сервисов и решение текущих вопросов.</p></div>
+</div></div></section>
+<section id="tools"><div class="wrap"><div class="section-head"><div><div class="kicker">03 / Рабочая среда</div><h2>Цифровая среда<br><em>и технологии</em></h2></div><p class="section-intro">Использую современные цифровые решения и AI, чтобы систематизировать информацию, поддерживать команду и делать рабочие процессы проще и эффективнее.</p></div>
+<div class="work-areas">
+ <article class="work-area"><div class="work-index">01</div><div><h3>Информация и аналитика</h3><p>Работа с документами, таблицами и данными, подготовка отчётности, исследования и структурирование информации. Google Workspace и офисные инструменты.</p></div></article>
+ <article class="work-area"><div class="work-index">02</div><div><h3>Искусственный интеллект</h3><p>ChatGPT, Claude и другие AI-инструменты для анализа, подготовки материалов, поиска решений и оптимизации повседневных задач.</p></div></article>
+ <article class="work-area"><div class="work-index">03</div><div><h3>Автоматизация процессов</h3><p>Работа с CRM-системами, чат-ботами, рассылками и цифровыми платформами для поддержки и автоматизации бизнес-процессов.</p></div></article>
+ <article class="work-area"><div class="work-index">04</div><div><h3>Проекты и коммуникации</h3><p>Планирование и координация задач, командное взаимодействие, сопровождение онлайн-проектов и организация рабочих процессов.</p></div></article>
+</div></div></section>
+<section id="video"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / Личное знакомство</div><h2>Видео-визитка</h2></div><p class="section-intro">Короткое видео поможет работодателю познакомиться со мной до личного общения.</p></div>
+<div class="video-box"><div class="video-placeholder"><div><div class="play">▶</div><strong>Видео-визитка Екатерины</strong><p>Видео добавим сюда отдельным файлом. Пожалуйста, загрузите ролик ещё раз — исходный файл сейчас недоступен в рабочей папке сайта.</p></div></div><div class="video-caption">Буду рада познакомиться и обсудить, чем могу быть полезна вашему проекту.</div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div><div class="kicker">05 / На связи</div><h2>Давайте обсудим сотрудничество</h2><p class="section-intro">Открыта к предложениям по позициям бизнес-ассистента и ассистента руководителя.</p></div><div class="contact-list"><a href="tel:+375295176605"><small>Телефон</small>+375 29 517 66 05</a><a href="mailto:Ekaterinapetrovna11@yandex.ru"><small>Email</small>Ekaterinapetrovna11@yandex.ru</a><a href="https://t.me/EkatLyashenko" target="_blank" rel="noopener"><small>Telegram</small>@EkatLyashenko ↗</a><a href="assets/resume-ekaterina-lyashenko.pdf" target="_blank"><small>Документ</small>Скачать резюме PDF ↗</a></div></div></div></section>
+</main>
+<footer class="wrap"><span>© Екатерина Ляшенко</span><span>Персональный сайт · Бизнес-ассистент</span></footer>
+</body></html>
